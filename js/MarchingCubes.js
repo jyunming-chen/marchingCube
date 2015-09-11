@@ -327,7 +327,8 @@ THREE.MarchingCubes = function(resolution, material, enableUvs, enableColors) {
     /////////////////////////////////////
 
     this.posnormtriv = function(pos, norm, o1, o2, o3, renderCallback) {
-console.log ('in posnormtriv');
+//console.log ('in posnormtriv');
+// too many times ...
         var c = this.count * 3;
 
         // positions
@@ -711,8 +712,7 @@ console.log ('in: generateGeometry');
         var zero = new THREE.Vector3( 0, 0, 0 );
 
         var geo_callback = function(object) {
-console.log ('in geo_callback');
-            //console.log( 'CALLBACK' );
+            console.log( 'CALLBACK' );
 
             var i, x, y, z, vertex, normal,
                 face, a, b, c, na, nb, nc, nfaces,
