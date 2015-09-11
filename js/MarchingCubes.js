@@ -327,7 +327,7 @@ THREE.MarchingCubes = function(resolution, material, enableUvs, enableColors) {
     /////////////////////////////////////
 
     this.posnormtriv = function(pos, norm, o1, o2, o3, renderCallback) {
-
+console.log ('in posnormtriv');
         var c = this.count * 3;
 
         // positions
@@ -661,7 +661,7 @@ console.log ('in: addBall');
     };
 
     this.render = function(renderCallback) {
-console.log ('in render');
+console.log ('in render' + renderCallback);
         this.begin();
 
         // Triangulate. Yeah, this is slow.
@@ -711,7 +711,7 @@ console.log ('in: generateGeometry');
         var zero = new THREE.Vector3( 0, 0, 0 );
 
         var geo_callback = function(object) {
-
+console.log ('in geo_callback');
             //console.log( 'CALLBACK' );
 
             var i, x, y, z, vertex, normal,
