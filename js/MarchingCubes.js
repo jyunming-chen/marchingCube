@@ -662,7 +662,7 @@ console.log ('in: addBall');
     };
 
     this.render = function(renderCallback) {
-console.log ('in render' + renderCallback);
+console.log ('in render ... polygonizing ...');
         this.begin();
 
         // Triangulate. Yeah, this is slow.
