@@ -151,7 +151,7 @@ THREE.MarchingCubes = function(resolution, material, enableUvs, enableColors) {
     // (this is where most of time is spent - it's inner work of O(n3) loop )
 
     this.polygonize = function(fx, fy, fz, q, isol, renderCallback) {
-
+console.log ('in: polygonize');
         // cache indices
         var q1 = q + 1,
             qy = q + this.yd,
@@ -659,7 +659,7 @@ console.log ('in: addBall');
     };
 
     this.render = function(renderCallback) {
-
+console.log ('in render');
         this.begin();
 
         // Triangulate. Yeah, this is slow.
@@ -694,7 +694,7 @@ console.log ('in: addBall');
     };
 
     this.generateGeometry = function() {
-
+console.log ('in: generateGeometry');
         function mmod( v, n) {
          return ((v%n)+n)%n;
         }
