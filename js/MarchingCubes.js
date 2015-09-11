@@ -151,7 +151,9 @@ THREE.MarchingCubes = function(resolution, material, enableUvs, enableColors) {
     // (this is where most of time is spent - it's inner work of O(n3) loop )
 
     this.polygonize = function(fx, fy, fz, q, isol, renderCallback) {
-console.log ('in: polygonize');
+//console.log ('in: polygonize');
+// too many prints ....
+
         // cache indices
         var q1 = q + 1,
             qy = q + this.yd,
